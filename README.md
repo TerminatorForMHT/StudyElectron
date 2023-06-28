@@ -6,7 +6,7 @@
 ```powershell
 set-ExecutionPolicy RemoteSigned  # 有提示选择A，没提示忽略！
 ```  
-### cnpm安装完后,使用淘宝源全局安装cnpm，命令：  
+### 使用淘宝源全局安装cnpm，命令：  
 ```shell
 npm install -g cnpm --registry=https://registry.npm.taobao.org
 ```
