@@ -2,9 +2,9 @@
   "name": "studyelectron",
   "version": "0.0.1",
   "description": "\"An Project which to study develop desktop soft used Electron!\"",
-  "main": "main.js",
+  "main": "js/main.js",
   "scripts": {
-    "start": "electron ./SRC/main.js"
+    "start": "electron js/main.js"
   },
   "repository": {
     "type": "git",

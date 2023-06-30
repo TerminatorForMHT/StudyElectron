@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="MarkDown Edit" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="../css/editormd.css" />
+    </head>
+    <body>
+        <div id="layout">
+            <header id="SelfHeader">
+                <h1>MarkDown Edit</h1>
+            </header>
+            <div id="test-editormd">
+                <textarea style="display:none;">
+</textarea>
+            </div>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="../editormd.min.js"></script>
+        <script type="text/javascript">
+			var testEditor;
+
+            $(function() {
+                testEditor = editormd("test-editormd", {
+                    width   : "90%",
+                    height  : 920,
+                    syncScrolling : "single",
+                    path    : "../lib/"
+                });
+            });
+        </script>
+        <style>#cnzz_stat_icon_1254310986{display: none;}</style>
+        <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254310986'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/stat.php%3Fid%3D1254310986%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </body>
+</html>
