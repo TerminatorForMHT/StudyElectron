@@ -4581,3 +4581,8 @@ hr.editormd-page-break {
     margin-right: auto;
     -webkit-app-region: drag;
 }
+
+#test-editormd{
+    border-radius: 10px;
+    -webkit-app-region: no-drag;
+}
