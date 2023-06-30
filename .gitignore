@@ -1,6 +1,6 @@
-node_modules
 .DS_Store
 typings
 typings.json
 /npminstall-debug.log
-/.idea/misc.xml
+/.idea
+node_modules

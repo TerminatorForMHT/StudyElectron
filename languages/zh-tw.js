@@ -89,41 +89,41 @@
                     codeEmptyAlert: "錯誤：請填寫代碼內容。",
                     placeholder:
     :
-        "coding now...."
-    },
-        htmlEntities : {
-            title : "HTML實體字符"
-        }
+    "coding now...."
+},
+    htmlEntities : {
+    title: "HTML實體字符"
+}
     ,
-        help : {
-            title : "使用幫助"
-        }
+help: {
+    title: "使用幫助"
+}
     }
     }
-        ;
+;
 
-        exports.defaults.lang = lang;
+exports.defaults.lang = lang;
     };
 
-    // CommonJS/Node.js
-    if (typeof require === "function" && typeof exports === "object" && typeof module === "object") {
-        module.exports = factory;
-    } else if (typeof define === "function")  // AMD/CMD/Sea.js
-    {
-        if (define.amd) { // for Require.js
+// CommonJS/Node.js
+if (typeof require === "function" && typeof exports === "object" && typeof module === "object") {
+    module.exports = factory;
+} else if (typeof define === "function")  // AMD/CMD/Sea.js
+{
+    if (define.amd) { // for Require.js
 
-            define(["editormd"], function (editormd) {
-                factory(editormd);
-            });
+        define(["editormd"], function (editormd) {
+            factory(editormd);
+        });
 
-        } else { // for Sea.js
-            define(function (require) {
-                var editormd = require("../editormd");
-                factory(editormd);
-            });
-        }
-    } else {
-        factory(window.editormd);
+    } else { // for Sea.js
+        define(function (require) {
+            var editormd = require("../editormd");
+            factory(editormd);
+        });
     }
+} else {
+    factory(window.editormd);
+}
 
-})();
+}) ();

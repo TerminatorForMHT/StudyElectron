@@ -20,11 +20,11 @@ function createWindow() {
             titleBarStyle: 'hidden',
             titleBarOverlay: {
                 color: '#FFFFFF00',
-                symbolColor: '#74b1be',
+                symbolColor: '#666666',
                 height: 15
             }
         })
-        mainWindow.loadFile('../html/index.html')
+        mainWindow.loadFile('../examples/simple.html')
 
     }
 }
