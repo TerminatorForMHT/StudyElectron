@@ -1,7 +1,7 @@
 {
   "name": "studyelectron",
   "version": "0.0.1",
-  "description": "\"An Project which to study develop desktop soft used Electron!\"",
+  "description": "A MarkDown Editor which develop base on electron",
   "main": "js/main.js",
   "scripts": {
     "start": "electron js/main.js"
